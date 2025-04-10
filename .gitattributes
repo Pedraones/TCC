@@ -1,0 +1,2 @@
+tcc/Assets/texture filter=lfs diff=lfs merge=lfs -text
+tcc/Assets/texture/ filter=lfs diff=lfs merge=lfs -text
