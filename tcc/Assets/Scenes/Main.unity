@@ -429,6 +429,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tuliu
       objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: dce44c8460115c74d9699034dab44fd1, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 660364a33870d0543bd0f7499c7b1da9, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
