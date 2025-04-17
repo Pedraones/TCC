@@ -7,6 +7,7 @@ public class Player : MonoBehaviour
     public CharacterController player;
     public Animator anim;
     public float vel;
+    public float velRun;
     private Vector3 Direcao;
 
     [Header("CAMERA")]
@@ -32,7 +33,7 @@ public class Player : MonoBehaviour
 
 
         Movimento(visao, anglo);
-
+        Correr(visao, anglo);
     }
 
 
@@ -42,9 +43,6 @@ public class Player : MonoBehaviour
     {
         if (Direcao.magnitude >= 0.1)
         {
-            // Rotação do personagem:
-
-
             // Aplica a rotação suavizada ao personagem:
             transform.rotation = Quaternion.Euler(0, anglo, 0);
 
@@ -60,8 +58,26 @@ public class Player : MonoBehaviour
 
         else
         {
-            player.Move(Direcao * vel * Time.deltaTime);
             anim.SetBool("Andar", false);
+        }
+    }
+
+
+    private void Correr(float visao, float anglo)
+    {
+        if (Input.GetKey(KeyCode.LeftShift) && Direcao.magnitude >= 0.1f)
+        {
+            transform.rotation = Quaternion.Euler(0, anglo, 0);
+
+            Vector3 novaDirecao = Quaternion.Euler(0, visao, 0) * Vector3.forward;
+
+            player.Move(novaDirecao * velRun * Time.deltaTime);
+            anim.SetBool("Correr", true);
+        }
+
+        else
+        {
+            anim.SetBool("Correr", false);
         }
     }
 }

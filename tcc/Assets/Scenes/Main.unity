@@ -206,7 +206,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.11397257, y: -0.000000008694921, z: 9.974822e-10, w: 0.9934839}
+  m_LocalRotation: {x: 0.071936026, y: -2.6824926e-15, z: 1.9346907e-16, w: 0.9974093}
   m_LocalPosition: {x: 22.658348, y: 6.6343226, z: -10.721362}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -440,7 +440,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 511474168}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.00000003701016, y: 0.000000023273321, z: -0.000000005411047, w: 1}
+  m_LocalRotation: {x: -7.81307e-32, y: 0.0000000026094376, z: -3.7836845e-10, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -543,7 +543,7 @@ MonoBehaviour:
       Size: {x: 0.8, y: 0.8}
       Offset: {x: 0, y: 0}
   CenterOnActivate: 1
-  TargetOffset: {x: 0, y: 1.32, z: 0}
+  TargetOffset: {x: 0, y: 1.67, z: 0}
   Damping: {x: 0.5, y: 0.5}
   Lookahead:
     Enabled: 0
@@ -773,9 +773,9 @@ MonoBehaviour:
   player: {fileID: 1266593721}
   anim: {fileID: 1266593723}
   vel: 3
+  velRun: 6
   camera: {fileID: 330585546}
-  velocidadeRotacao: 0.1
-  suavizarCamera: 0.01
+  suavizarCamera: 0.15
 --- !u!95 &1266593723 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 5866666021909216657, guid: dce44c8460115c74d9699034dab44fd1, type: 3}
