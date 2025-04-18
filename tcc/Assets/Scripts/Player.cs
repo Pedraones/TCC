@@ -11,7 +11,7 @@ public class Player : MonoBehaviour
     private Vector3 Direcao;
 
     [Header("CAMERA")]
-    public Transform camera;
+    public Transform _camera;
     private float velocidadeRotacao;
     public float suavizarCamera;
 
@@ -28,7 +28,7 @@ public class Player : MonoBehaviour
         float vertical = Input.GetAxisRaw("Vertical"); // Obtem o eixo vertical(W, S)
         Direcao = new Vector3(horizontal, 0, vertical); // Obtem um Vector3 que x e z são controlados pelo jogador(WASD)
 
-        float visao = Mathf.Atan2(Direcao.x, Direcao.z) * Mathf.Rad2Deg + camera.eulerAngles.y; // Calcula o ângulo de direção:
+        float visao = Mathf.Atan2(Direcao.x, Direcao.z) * Mathf.Rad2Deg + _camera.eulerAngles.y; // Calcula o ângulo de direção:
         float anglo = Mathf.SmoothDampAngle(transform.eulerAngles.y, visao, ref velocidadeRotacao, suavizarCamera); // Suaviza a rotação para transição suave
 
 
