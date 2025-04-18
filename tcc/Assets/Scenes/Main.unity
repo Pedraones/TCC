@@ -144,13 +144,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 244312648}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.7, z: 0}
+  m_LocalRotation: {x: 0.000000033527613, y: -1.14691534e-10, z: 3.1267513e-11, w: 1}
+  m_LocalPosition: {x: 0, y: 0.1, z: 0.15}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 604465975}
-  m_Father: {fileID: 642481859}
+  m_Father: {fileID: 600752181}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &244312650
 MonoBehaviour:
@@ -703,6 +703,11 @@ MonoBehaviour:
       BarrelClipping: 0.25
       Anamorphism: 0
   BlendHint: 0
+--- !u!4 &600752181 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -3321919801592875672, guid: dce44c8460115c74d9699034dab44fd1, type: 3}
+  m_PrefabInstance: {fileID: 1230798793}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &604465974
 GameObject:
   m_ObjectHideFlags: 0
@@ -820,7 +825,7 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.3
+  near clip plane: 0.1
   far clip plane: 1000
   field of view: 60.000004
   orthographic: 0
@@ -872,7 +877,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1230798794}
-  - {fileID: 244312649}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &642481860
@@ -888,7 +892,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controller: {fileID: 642481861}
-  velocidade: 6
+  animator: {fileID: 1230798795}
+  velAndar: 6
+  velCorrer: 12
   cameraHolder: {fileID: 244312649}
 --- !u!143 &642481861
 CharacterController:
@@ -1145,7 +1151,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: dce44c8460115c74d9699034dab44fd1, type: 3}
       propertyPath: m_Name
-      value: Tuliu
+      value: Tuliu (real)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1630794972795428178, guid: dce44c8460115c74d9699034dab44fd1, type: 3}
+      propertyPath: m_UpdateWhenOffscreen
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5866666021909216657, guid: dce44c8460115c74d9699034dab44fd1, type: 3}
       propertyPath: m_Enabled
@@ -1155,14 +1165,26 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 660364a33870d0543bd0f7499c7b1da9, type: 2}
+    - target: {fileID: 5866666021909216657, guid: dce44c8460115c74d9699034dab44fd1, type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: -3321919801592875672, guid: dce44c8460115c74d9699034dab44fd1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 244312649}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dce44c8460115c74d9699034dab44fd1, type: 3}
 --- !u!4 &1230798794 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: dce44c8460115c74d9699034dab44fd1, type: 3}
+  m_PrefabInstance: {fileID: 1230798793}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1230798795 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5866666021909216657, guid: dce44c8460115c74d9699034dab44fd1, type: 3}
   m_PrefabInstance: {fileID: 1230798793}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1266593718 stripped
