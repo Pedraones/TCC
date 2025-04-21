@@ -181,7 +181,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 180739062}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -1104,7 +1104,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1266593721}
   anim: {fileID: 1266593723}
-  velocidade: 2
+  velocidade: 2.3
   velocidadeRun: 4
   camera: {fileID: 330585546}
   suavizarCamera: 0.1
