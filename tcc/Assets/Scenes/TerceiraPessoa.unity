@@ -887,8 +887,8 @@ MonoBehaviour:
   anim: {fileID: 1266593723}
   vel: 3
   velRun: 6
-  _camera: {fileID: 330585546}
-  suavizarCamera: 0.15
+  camera: {fileID: 330585546}
+  suavizarCamera: 0.1
 --- !u!95 &1266593723 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 5866666021909216657, guid: dce44c8460115c74d9699034dab44fd1, type: 3}
