@@ -886,6 +886,7 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0.9, z: 0}
+<<<<<<< HEAD
 --- !u!1 &921241234
 GameObject:
   m_ObjectHideFlags: 0
@@ -979,6 +980,8 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+=======
+>>>>>>> origin
 --- !u!1 &1067371433
 GameObject:
   m_ObjectHideFlags: 0
@@ -1687,4 +1690,7 @@ SceneRoots:
   - {fileID: 1587351939}
   - {fileID: 1873529730}
   - {fileID: 1424025019}
+<<<<<<< HEAD
   - {fileID: 921241237}
+=======
+>>>>>>> origin
