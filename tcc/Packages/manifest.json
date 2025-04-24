@@ -8,7 +8,11 @@
     "com.unity.ide.vscode": "1.2.4",
     "com.unity.inputsystem": "1.13.1",
     "com.unity.multiplayer.center": "1.0.0",
+<<<<<<< HEAD
     "com.unity.render-pipelines.high-definition": "17.0.4",
+=======
+    "com.unity.postprocessing": "3.4.0",
+>>>>>>> 688e9fd36d9586f1ccc24bfc7608d0ce95307bc2
     "com.unity.render-pipelines.universal": "17.0.4",
     "com.unity.shadergraph": "17.0.4",
     "com.unity.test-framework": "1.4.6",
